@@ -41,7 +41,7 @@ def getAllPosts():
         posts_d["likes"] = post[3]
         posts_l.append(posts_d)
     jsonString = json.dumps(posts_l)
-    return jsonString
+    return "list: " + jsonString
 
 if __name__ == '__main__':
     app.run(debug=True)
