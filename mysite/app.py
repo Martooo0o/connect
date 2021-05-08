@@ -40,6 +40,7 @@ def getAllPosts():
         posts_d["content"] = post[2]
         posts_d["likes"] = post[3]
         posts_l.append(posts_d)
+        posts_d = {}
     jsonString = json.dumps(posts_l)
     return '{"list":' + jsonString + "}"
 
